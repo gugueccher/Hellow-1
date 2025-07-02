@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="cabechalho">
+        <h1 class="titulo">Jogos de matemática</h1>
+        <img src="econometrie-1200x410.jpg" alt="" width="700" height="160">
+        <nav class=" nav">
+            <a href="home.htm" style="text-decoration: none; color: black;">Início</a>
+            <a href="jogoadi.htm" style="text-decoration: none; color: black;">Contato</a>
+        </nav>
+    </header>
+    <section class="secao">
+        <div class="matematica">
+
+            <h2 class="container-titulo" style="font-size: 30px;">Jogo 1</h2>
+            <img src="download.png" alt="" width="200px">
+
+            <p class="bruto">Teste de Tabuada </p>
+            <input  type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
+            <button class="botao"  onclick="tabuada()" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
+            <p id="tentativaTabuada" class="resposta">Resposta</p>
+
+        </div>
+        <div class="matematica ">
+
+            <h2 class="container-titulo" style="font-size: 30px" ;>Jogo 2</h2>
+            <img src="adicao-de-matematica-para-modelo-de-vetor-de-criancas_917138-4358.avif" alt="" width="200px">
+            
+            <p class="bruto">Teste de Cáuculo</p>
+            <input  type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
+            <button class="botao"  style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
+            <p id="resposta" class="resposta">Resposta</p>
+        </div>
+        <div class="matematica ">
+
+            <h2 class="container-titulo" style="font-size: 30px;">Jogo 3</h2>
+            <img src="13.jpg" alt="" width="200px">
+            
+            <p class="bruto">Adivinhe o Número</p>
+            <input id="inputTentativa" type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
+            <button class="botao" onclick="adivinhar()" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
+            <p id="readivinhacao" class="resposta">Resposta</p>
+        </div>
+    </section>
+    <FOoter id="footer">
+        <script src="script.js"></script>
+        <p>ACABO</p>
+    </FOoter>
+</body>
+
+</html>
