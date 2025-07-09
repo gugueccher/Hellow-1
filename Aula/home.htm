@@ -14,43 +14,63 @@
         <h1 class="titulo">Jogos de matemática</h1>
         <img src="econometrie-1200x410.jpg" alt="" width="700" height="160">
         <nav class=" nav">
-        <a href="home.htm" style="text-decoration: none; color: black;">Início</a>
-        <a href="jogoadi.htm" style="text-decoration: none; color: black;">Contato</a>
+            <a href="home.htm" style="text-decoration: none; color: black;">Início</a>
+            <a href="jogoadi.htm" style="text-decoration: none; color: black;">Contato</a>
         </nav>
     </header>
+
+    <!--Tabuada-->
+
     <section class="secao">
         <div class="matematica">
 
             <h2 class="container-titulo" style="font-size: 30px;">Jogo 1</h2>
             <img src="download.png" alt="" width="200px">
-            
-            <p class= "bruto">Teste de Tabuada </p>
-            <input type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
-            <button class="botao" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
-            <p class="resposta">Resposta</p>
+
+            <p class="bruto">Teste de Tabuada </p>
+            <p id="calculo" class="bruto">Teste de Tabuada </p>
+            <input id="tabuada" type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
+            <button class="botao" onclick="tabuada()" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar
+                sua Resposta</button>
+            <p id="resptabuada" class="resposta">Resposta</p>
+            <button onclick="resetTabuada()" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Jogar
+                novamente</button>
+
         </div>
+
+        <!--Equação-->
+
         <div class="matematica ">
 
-            <h2 class="container-titulo" style="font-size: 30px";>Jogo 2</h2>
+            <h2 class="container-titulo" style="font-size: 30px" ;>Jogo 2</h2>
             <img src="adicao-de-matematica-para-modelo-de-vetor-de-criancas_917138-4358.avif" alt="" width="200px">
-            <p class= "bruto">Teste de Cáuculo</p>
+
+            <p class="bruto">Teste de Cáuculo</p>
             <input type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
             <button class="botao" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
-            <p class="resposta">Resposta</p>
+            <p id="respequacao" class="resposta">Resposta aqui</p>
+
         </div>
+
+        <!--Adivinhação-->
+
         <div class="matematica ">
 
             <h2 class="container-titulo" style="font-size: 30px;">Jogo 3</h2>
             <img src="13.jpg" alt="" width="200px">
-            <p class= "bruto">Adivinhe o Número</p>
-            <input type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
-            <button class="botao" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
-            <p class="resposta">Resposta</p>
+
+            <p class="bruto">Adivinhe o Número</p>
+            <input id="inputTentativa" type="text" placeholder="Resposta aqui :>" class="cargo-formulario" />
+            <button class="botao" onclick="adivinhar()" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Enviar sua Resposta</button>
+            <p id="readivinhacao" class="resposta">Resposta</p>
+            <button onclick="" style="margin-bottom: 8px; margin: 8px; margin-top: 8px;">Jogar
+                novamente</button>
+
         </div>
     </section>
     <FOoter id="footer">
-
-        <p>ACABO</p>
+        <script src="script.js"></script>
+        <p>T_T</p>
     </FOoter>
 </body>
 
